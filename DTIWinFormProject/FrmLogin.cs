@@ -80,8 +80,8 @@ namespace DTIWinFormProject
             else
             {
                 //ตรวจสอบชื่อผู้ใช้/รหัสผ่าน sau/123456789 , dti987654321 เมื่อเข้า FrmMainMenu
-                if( (tbUsername.Text.Trim().ToLower() == "sau" || tbPassword.Text.Trim().ToLower() != "123456789") &&
-                    (tbUsername.Text.Trim().ToLower() == "dti" || tbPassword.Text.Trim().ToLower() != "987654321"))
+                if( (tbUsername.Text.Trim().ToLower() != "sau" || tbPassword.Text.Trim().ToLower() != "123456789") &&
+                    (tbUsername.Text.Trim().ToLower() != "dti" || tbPassword.Text.Trim().ToLower() != "987654321"))
                 {
                     //ชื่อผู้ใช้รหัสผ่านไม่ถูกต้อง แสดงข้อความ
                     showWarningMSG("ชื่อผู้ใช้รหัสผ่านไม่ถูกต้อง");
