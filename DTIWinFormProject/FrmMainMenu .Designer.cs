@@ -1,6 +1,6 @@
 ﻿namespace DTIWinFormProject
 {
-    partial class Form1
+    partial class FrmMainMenu
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMainMenu));
             this.label1 = new System.Windows.Forms.Label();
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
@@ -178,7 +178,7 @@
             this.toolStripLabel2.Size = new System.Drawing.Size(59, 22);
             this.toolStripLabel2.Text = "datetime?";
             // 
-            // Form1
+            // FrmMainMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -196,7 +196,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.Name = "Form1";
+            this.Name = "FrmMainMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "หน้าจอหลัก DTI - Soft V1.0";
             this.toolStrip1.ResumeLayout(false);

@@ -16,7 +16,7 @@ namespace DTIWinFormProject
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmSAURegister());
+            Application.Run(new FrmLogin());
         }
     }
 }
