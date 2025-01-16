@@ -88,10 +88,21 @@ namespace DTIWinFormProject
                 }
                 else
                 {
-                    //ชื่อผู้ใช้รหัสผ่านถูกต้อง เปิด FrmMainMenu
-                    FrmMainMenu frmMainMenu = new FrmMainMenu();
+                    //ชื่อผู้ใช้รหัสผ่านถูกต้อง เปิด FrmMainMenu ส่งชื่อผู้ใช้
+
+                    Sharedata.loginName = tbUsername.Text.Trim();
+                    if (rdStudent.Checked == true)
+                    {
+                        Sharedata.loginType = "student";
+                    }
+                    else
+                    {
+                        Sharedata.loginType = "teacher";
+                    }
+                   
+                    FrmMainMenu frmMainMenu = new FrmMainMenu(); 
                     frmMainMenu.Show();
-                    Hide();
+                    Hide();//ปิดหน้าจอตัวเอง
                 } 
             }   
         }
